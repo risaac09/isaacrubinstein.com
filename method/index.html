@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I structure an evaluation engagement | Isaac Rubinstein, MPH</title>
+<meta name="description" content="A working method: utilization-focused evaluation as a set of decision rules, not slogans. How I structure engagements so funders, staff, and residents can act on the findings.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isaacrubinstein.com/method/">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://isaacrubinstein.com/method/">
+<meta property="og:title" content="How I structure an evaluation engagement">
+<meta property="og:description" content="Utilization-focused evaluation as a set of decision rules, not slogans.">
+<meta property="og:image" content="https://isaacrubinstein.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#0F1729">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How I structure an evaluation engagement",
+  "author": {
+    "@type": "Person",
+    "name": "Isaac Rubinstein",
+    "url": "https://isaacrubinstein.com/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Isaac Rubinstein"
+  },
+  "url": "https://isaacrubinstein.com/method/",
+  "about": "Utilization-focused evaluation, CDC Framework for Program Evaluation, equity-centered evaluation, participatory evaluation"
+}
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<style>
+  /* ---------- Method essay layout ---------- */
+  .essay-header {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: var(--space-5);
+  }
+  .essay-eyebrow {
+    display: block;
+    margin-bottom: var(--space-2);
+  }
+  .essay-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 500;
+    font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    color: var(--ink);
+    margin: 0 0 var(--space-3);
+    max-width: 820px;
+    text-wrap: balance;
+  }
+  .essay-dek {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 36, "SOFT" 30;
+    font-size: clamp(1.125rem, 1.7vw, 1.375rem);
+    line-height: 1.5;
+    color: var(--graphite);
+    max-width: 720px;
+    margin: 0 0 var(--space-3);
+  }
+  .essay-meta {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-family: "Inter", sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .essay-meta .essay-meta-num {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 36;
+    color: var(--ochre);
+    font-feature-settings: "tnum", "lnum";
+  }
+
+  .essay {
+    max-width: var(--maxw-text);
+    margin: 0 auto;
+  }
+  .essay h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 72, "SOFT" 30;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: var(--space-5) 0 var(--space-2);
+    color: var(--ink);
+  }
+  .essay h2 .essay-h2-num {
+    display: block;
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 14;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--ochre);
+    font-feature-settings: "tnum", "lnum";
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 0.625rem;
+  }
+  .essay p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin: 0 0 1.125em;
+    max-width: none;
+  }
+  .essay p.essay-lead {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 36, "SOFT" 30;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: var(--space-3);
+  }
+  .essay .pull-quote {
+    margin: var(--space-4) 0;
+  }
+  .essay .pull-quote blockquote {
+    font-size: clamp(1.25rem, 2.4vw, 1.625rem);
+  }
+  .essay ul {
+    padding-left: 1.25rem;
+    margin: 0 0 1.125em;
+  }
+  .essay li {
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+  }
+  .essay li::marker {
+    color: var(--ochre);
+  }
+  .essay strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .essay-cta {
+    margin: var(--space-6) auto 0;
+    max-width: var(--maxw-text);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    align-items: baseline;
+  }
+  .essay-cta .label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--slate);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 640px) {
+    .essay-meta { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+<header class="masthead" id="masthead" role="banner">
+  <div class="nav-inner">
+    <a class="mark" href="../">
+      <span class="mark-name">Isaac Rubinstein</span>
+      <span class="mark-cred">MPH</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../#about"><span class="num">01</span>About</a></li>
+        <li><a href="../#approach" class="active"><span class="num">02</span>Approach</a></li>
+        <li><a href="../#services"><span class="num">03</span>Services</a></li>
+        <li><a href="../#experience"><span class="num">04</span>Experience</a></li>
+        <li><a href="../#contact"><span class="num">05</span>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <article>
+    <header class="essay-header">
+      <span class="eyebrow essay-eyebrow">Method &middot; Working notes</span>
+      <h1 class="essay-title">How I structure an evaluation engagement</h1>
+      <p class="essay-dek">Utilization-focused evaluation, written down as decision rules instead of slogans &mdash; so a funder, a coalition director, and a resident leader can all read the same plan and know what they&rsquo;re agreeing to.</p>
+      <div class="essay-meta">
+        <span><span class="essay-meta-num">~12 min read</span></span>
+        <span>For program officers, evaluation directors, and coalition leadership</span>
+      </div>
+    </header>
+
+    <div class="essay">
+      <p class="essay-lead">Most evaluation plans I&rsquo;ve inherited from previous evaluators are written backwards. They start with the methods &mdash; surveys, focus groups, administrative data &mdash; and treat the question of <em>what the report needs to change</em> as something to mention in a closing paragraph. By then it&rsquo;s usually too late: the data is already structured around what was easiest to collect, not around what would actually move a decision.</p>
+
+      <p>The CDC Framework for Program Evaluation gets this right in principle. Engage stakeholders, describe the program, focus the design, gather credible evidence, justify conclusions, ensure use. The trouble is that the framework is silent on the decision rules that operationalize each step &mdash; and without those rules, &ldquo;engage stakeholders&rdquo; quietly becomes &ldquo;send them the draft for review&rdquo; and &ldquo;ensure use&rdquo; quietly becomes &ldquo;hope they read it.&rdquo;</p>
+
+      <p>What follows is the working method I bring to engagements. It&rsquo;s not a manifesto. It&rsquo;s a set of small commitments, each of which has a name and a place in the plan, so that I and the people who hire me can hold each other to them. I&rsquo;ve found that the engagements where the method holds best are the ones where the funder, the program staff, and the residents who participate all read the same evaluation plan and recognize their part of the bargain in it.</p>
+
+      <h2><span class="essay-h2-num">i.</span>Name the primary user before naming the methods</h2>
+
+      <p>Patton&rsquo;s utilization-focused frame insists on one thing above all: <strong>identify the named primary user</strong>, the actual human whose decision the report exists to inform, and design backwards from there. In practice this is harder than it sounds. Programs often have many stakeholders, and there is real political pressure to name them all and call it &ldquo;participatory.&rdquo; That conflates two different things.</p>
+
+      <p>My rule: every engagement I take has, in writing, a single named primary user (or, in larger programs, a small named user group) who can complete the sentence: <em>&ldquo;When I read the report, I will use it to decide ___.&rdquo;</em> If the named user can&rsquo;t finish that sentence, we don&rsquo;t collect data yet. We redesign the question.</p>
+
+      <figure class="pull-quote">
+        <blockquote>If the named user can&rsquo;t tell me which decision the report will inform, we redesign the question before we collect data.</blockquote>
+      </figure>
+
+      <p>This sounds austere. In practice it&rsquo;s clarifying. A coalition director who initially asks for &ldquo;an outcome evaluation&rdquo; will, when pressed, often realize that what they actually need is evidence to defend a budget line at the next state hearing &mdash; and that need produces a very different evaluation than &ldquo;outcomes.&rdquo; Naming the user surfaces the decision; naming the decision rewrites the design.</p>
+
+      <h2><span class="essay-h2-num">ii.</span>Apply the three equity questions to every row of the plan</h2>
+
+      <p>Equity-centered evaluation, in too many engagements, lives in an appendix. The methods are designed for population averages; the disaggregation happens at the end; and a section gets added titled something like &ldquo;Equity considerations.&rdquo; The problem isn&rsquo;t the section. The problem is that by the time it&rsquo;s being written, the design has already foreclosed most of the equity questions worth asking.</p>
+
+      <p>I work with three equity questions, and they ride every row of the evaluation plan from the start:</p>
+
+      <ul>
+        <li><strong>Who benefits?</strong> Not in aggregate &mdash; in the specific cuts the program is supposed to serve. Whose outcomes is the program theory of change actually claiming to move?</li>
+        <li><strong>Who is missing from the data?</strong> Not just &ldquo;hard-to-reach populations&rdquo; in the abstract, but: which residents&rsquo; experiences will be invisible in this dataset, and what will that invisibility cost the conclusions we draw?</li>
+        <li><strong>Whose voice shapes the narrative?</strong> Who decides what the findings mean, in what order, and which framings reach the funder? This is usually the most consequential equity question, and the easiest one to leave unanswered.</li>
+      </ul>
+
+      <p>These three questions go in the evaluation plan, in the methods, in the analysis, and in the reporting cadence. They do not live in a closing paragraph. When a quarterly review meeting opens, we open by asking them again, in that order. The discipline of repetition is what keeps them from becoming decorative.</p>
+
+      <h2><span class="essay-h2-num">iii.</span>Scope participation honestly &mdash; symbol vs. authority</h2>
+
+      <p>Participatory evaluation is the term we use for a wide range of practices that are not always the same thing. At one end, residents and program staff actually share authority over evaluation decisions: which questions to ask, how to interpret findings, what to do about them. At the other end, residents review a draft someone else wrote, and their comments are folded in if they&rsquo;re convenient.</p>
+
+      <p>Both can be called participatory. Only one is. I think evaluators owe their partners more honesty about which they&rsquo;re offering.</p>
+
+      <p>My approach: every engagement I write makes explicit, in plain language, which decisions are <strong>co-owned</strong> with community partners and which are <strong>mine to make</strong>. Co-owned decisions are listed by name &mdash; usually questions of which findings get foregrounded, how stories get told, what counts as &ldquo;good enough&rdquo; evidence. Mine include methodological choices that require evaluation training to make well, the consistency of analytic frameworks across sites, and the integrity of what the report says is true.</p>
+
+      <p>Naming the line lets a partner push on it. I&rsquo;ve had resident leadership councils rewrite my list, moving items from my column into the co-owned column, and I&rsquo;ve agreed and moved them. That&rsquo;s the conversation I want. The conversation I don&rsquo;t want is a vague claim of partnership that quietly excludes residents from the decisions that matter most.</p>
+
+      <h2><span class="essay-h2-num">iv.</span>Let the method follow the question, not the inventory</h2>
+
+      <p>Evaluators have inventories of methods we know well, and there is a temptation to apply the ones we like. Surveys, because we have a good template; focus groups, because we have a trusted facilitator; admin data analysis, because the dataset is sitting there. None of these is wrong. They become wrong when they precede the question.</p>
+
+      <p>Once the named primary user has finished the sentence about what the report will inform, the question of methods becomes a much smaller question. Often a single, well-designed cohort interview series will do more for the decision than a 30-question survey would. Sometimes the right move is to integrate with an existing administrative dataset and avoid burdening residents with new data collection at all. Sometimes the question requires both, and the methods need to be designed to triangulate rather than parallel each other.</p>
+
+      <p>The CDC Framework treats this as &ldquo;focusing the evaluation design.&rdquo; In practice I think of it more simply: <em>what is the smallest, lightest data infrastructure that can credibly answer the named user&rsquo;s named question?</em> The answer is almost always smaller than the proposal first imagined.</p>
+
+      <h2><span class="essay-h2-num">v.</span>Differentiate the reporting cadence by primary user</h2>
+
+      <p>One of the most common failures of evaluation engagements is that everybody gets the same report. Funders get a 60-page document; coalition staff get the same 60-page document; residents get a glossy two-pager that strips out the analysis. None of those audiences is well served, and resentment compounds: the funder feels that the report is bloated, staff feel it&rsquo;s academic, residents feel it&rsquo;s condescending.</p>
+
+      <p>Better, in my experience, is to design the reporting cadence around each named user up front:</p>
+
+      <ul>
+        <li><strong>For the funder or program officer:</strong> a quarterly brief written to the structure of the federal or state reporting template, so it can be lifted directly into their work product.</li>
+        <li><strong>For coalition leadership:</strong> a narrative-and-numbers internal memo, monthly, focused on what is working, what is breaking, and what to try next. Written for a leader who has 20 minutes to read it before a board meeting.</li>
+        <li><strong>For residents and partner CBOs:</strong> a dashboard or short bilingual summary that translates findings into the form residents can use to advocate, organize, or hold the program accountable. Not a watered-down version of the staff memo &mdash; a different document that serves a different need.</li>
+      </ul>
+
+      <p>This costs more time than producing one report. It also dramatically increases the chance that the evaluation actually changes anything. If the funder needs different evidence than the coalition does, then producing one document for both means producing one document for neither.</p>
+
+      <h2><span class="essay-h2-num">vi.</span>Be explicit about what I won&rsquo;t do</h2>
+
+      <p>A method is partly defined by what it refuses. There are a small number of engagements I decline, even when the budget is right, because I know in advance the conditions for the method to hold won&rsquo;t be met:</p>
+
+      <ul>
+        <li>Engagements where the program team can&rsquo;t name a primary user who can describe the decision the report will inform. This is usually a sign the evaluation is being commissioned for compliance reasons rather than learning ones, and a different kind of evaluator is the right fit.</li>
+        <li>Engagements where the funder requires a predetermined finding. Sometimes this is explicit; more often it&rsquo;s implicit in a scope that asks the evaluation to &ldquo;document impact&rdquo; rather than &ldquo;test whether impact occurred.&rdquo;</li>
+        <li>Engagements where participation with community partners is presented as central but the budget allocates no time or compensation for residents to actually participate. Authentic participation costs money. If it&rsquo;s not in the budget, it&rsquo;s not in the engagement.</li>
+      </ul>
+
+      <p>I name these in scoping conversations rather than after a contract is signed. It saves everyone time and produces, occasionally, the much better outcome of a redesigned engagement that fits all three constraints from the start.</p>
+
+      <h2><span class="essay-h2-num">vii.</span>What this all sits on</h2>
+
+      <p>None of this is original. The CDC Framework, the utilization-focused tradition Patton has been refining for forty years, the equity-evaluation literature of the last decade &mdash; the field has been here before, repeatedly, and the work I do is downstream of that literature.</p>
+
+      <p>What I&rsquo;ve tried to do is convert ideas that often live as principles into <em>decision rules with a place in the plan</em>. A principle a partner agrees with is good. A decision rule a partner can hold me to is better. The difference between them is what I think it means to take utilization-focused, participatory, equity-centered evaluation seriously in 2026.</p>
+
+      <p>If you&rsquo;re considering an engagement and any of this resonates &mdash; or doesn&rsquo;t, and you want to push back &mdash; I&rsquo;d welcome the conversation.</p>
+    </div>
+
+    <div class="essay-cta">
+      <span class="label">Continue</span>
+      <a href="../work/central-providence-hez/">See this in practice &mdash; Central Providence HEZ case study</a>
+      <a href="../#contact">Discuss an engagement</a>
+      <a href="../">Back to home</a>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <small>&copy; 2026 Isaac Rubinstein. All rights reserved.</small>
+  <span class="colophon">Set in Fraunces &amp; Inter</span>
+</footer>
+
+<script>
+  (function() {
+    var nav = document.getElementById('masthead');
+    var bar = document.getElementById('scroll-progress');
+    function onScroll() {
+      var y = window.scrollY;
+      if (y > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = h > 0 ? Math.min(100, (y / h) * 100) : 0;
+      if (bar) bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+
+</body>
+</html>
