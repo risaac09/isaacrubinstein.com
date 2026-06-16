@@ -1,13 +1,13 @@
 # isaacrubinstein.com
 
-Single-page static site for Isaac Rubinstein, MPH — Independent Program Evaluator & Advisor.
+Single-page static site for Isaac Rubinstein, MPH, Independent Program Evaluator & Advisor.
 
 ## Files
 
 | File | Purpose |
 |---|---|
 | `index.html` | Entire site (HTML, CSS, JS inline) |
-| `favicon.svg` | Primary favicon (monogram "IR" on navy) |
+| `favicon.svg` | Primary favicon (monogram "IR" on ink) |
 | `favicon.ico` | Legacy favicon for older browsers |
 | `apple-touch-icon.png` | iOS home-screen icon (180×180) |
 | `og-image.png` | Open Graph / Twitter social-share image (1200×630) |
@@ -61,24 +61,27 @@ Serves on `http://localhost:8000`.
   qlmanage -t -s 1200 -o . og-image.svg && mv og-image.svg.png og-image.png && sips -c 630 1200 og-image.png --out og-image.png
   ```
 - **Canonical URL:** `https://isaacrubinstein.com/` (update if deploying elsewhere).
-- **Accessibility:** WCAG 2.2 AA — focus-visible styles, skip link, `prefers-reduced-motion` support, semantic landmarks, labeled regions.
+- **Accessibility:** WCAG 2.2 AA, focus-visible styles, skip link, `prefers-reduced-motion` support, semantic landmarks, labeled regions.
 - **Print:** dedicated print stylesheet; hero, about, services, and projects survive a paper print.
 - **Core Web Vitals:** headshot has explicit `width`/`height` (no CLS); fonts use `display=swap`; single HTML file, no blocking JS.
 - **Page weight:** `index.html` is ~18KB. Total (excluding headshot + CV) well under 50KB.
 
 ## Design system
 
-| Token | Value |
-|---|---|
-| Navy | `#1B2A4A` |
-| Steel blue | `#4A6FA5` |
-| Gold (accent) | `#C5A55A` |
-| Background | `#FAFAFA` |
-| Text | `#2C2C2C` |
-| Muted | `#6B6B6B` |
-| Border | `#E0E0E0` |
+This site is **Brand A (Ink/Ochre/Teal)**, the evaluation-practice identity. The full spec lives in [`DESIGN.md`](DESIGN.md) at the repo root, which is the source of truth. Summary:
 
-Headings: Source Serif 4 · Body: Source Sans 3 · Max content width: 800px.
+| Token | Value | Role |
+|---|---|---|
+| Ink | `#0F1729` | Headings, display, dark UI |
+| Graphite | `#2A2D34` | Body text |
+| Slate | `#5A6170` | Meta, labels, captions |
+| Ochre (web) | `#7E5825` | Editorial accent: numerals, links, rules (darkened for WCAG AA) |
+| Teal | `#2B6A6E` | Analytical accent: findings and numbers (print today) |
+| Rule | `#D8D2C3` | Warm hairlines |
+| Cream | `#F7F4EC` | Page background |
+| Paper | `#FFFFFF` | Cards and panels |
+
+Headings: Fraunces (variable serif) · Body: Inter · Reading column 680px inside a 920px frame.
 
 ## Updating content
 
