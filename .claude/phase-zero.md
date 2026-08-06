@@ -23,7 +23,7 @@ every clone, with or without stack-data alongside.
 - Rubinstein Productions (RP): the production shop. Client work, content.
 - **Material and Meaning**: the public health research institute. The research layer.
 - **Third Information Lab**: the lab under Material and Meaning. Evaluation
-  first: it carries the three-type evaluation into datafied care.
+  first: it carries the Three-Record Evaluation into datafied care.
 - Four directions: North = work, East = innocence, South = transition,
   West = clarity. Name the one the task faces before acting.
 - Voice rules: no em-dashes, no rule-of-three, no promotional verbs, active
@@ -49,6 +49,19 @@ this file is versioned in `rubinstein-productions-toolkit/phase-zero/`.
 4. Act in the branch, validate before commit, report back.
 
 Centralize the map. Delegate the work.
+
+## The merge boundary
+
+Decided 2026-07-16 (stack-data `docs/DECISIONS.md`, "The merge boundary").
+The human gate sits at the public edge of the system, not at merge. Ask of
+any change: does it leave the stack and reach another human? Public-facing
+work (site copy, live apps, public datasets, papers, outreach) opens ready
+and waits for Isaac. Internal work is agent-owned: merge behind green
+validation, green CI, and an adversarial self-review of the diff, then log
+the ripple after the fact. Post-hoc audit replaces pre-approval; Isaac
+samples one internal merge a week. Two things never move under this rule:
+Mercer's outbound send authority (its charter owns that gate) and any
+locked pre-registration.
 
 ## The bookend: retrospective
 
